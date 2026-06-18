@@ -1,16 +1,96 @@
-# React + Vite
+# PostFlow — Parcial React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación de gestión de publicaciones desarrollada con React + Vite como trabajo práctico parcial.
 
-Currently, two official plugins are available:
+## Demo en vivo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+[https://jordydev1993.github.io/parcialReact/](https://jordydev1993.github.io/parcialReact/)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Integrantes
 
-## Expanding the ESLint configuration
+| Nombre |
+|---|
+| Lozano Melani |
+| Galvan Camila |
+| Martinez Sofia |
+| Huansi Jordy |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tecnologías utilizadas
+
+- React 19
+- React Router DOM 7
+- Vite 8
+- CSS puro (variables, grid, animaciones)
+
+---
+
+## Instalación y ejecución local
+
+### Requisitos previos
+
+- Node.js 18 o superior
+- npm 9 o superior
+
+### Pasos
+
+**1. Clonar el repositorio**
+
+```bash
+git clone https://github.com/jordydev1993/parcialReact.git
+cd parcialReact
+```
+
+**2. Instalar dependencias**
+
+```bash
+npm install
+```
+
+**3. Ejecutar en modo desarrollo**
+
+```bash
+npm run dev
+```
+
+Abrir [http://localhost:5173](http://localhost:5173) en el navegador.
+
+**4. Compilar para producción**
+
+```bash
+npm run build
+```
+
+**5. Previsualizar el build de producción**
+
+```bash
+npm run preview
+```
+
+---
+
+## Deploy a GitHub Pages
+
+```bash
+npm run deploy
+```
+
+Este comando ejecuta el build automáticamente y publica el resultado en la rama `gh-pages`.
+
+---
+
+## Funcionalidades implementadas
+
+- CRUD completo de publicaciones (crear, leer, editar, eliminar)
+- Formulario con contador de caracteres, validaciones visuales y vista previa en tiempo real
+- Tema claro / oscuro con Context API (persiste entre navegaciones)
+- Hook personalizado `usePostForm` reutilizable para crear y editar
+- `useRef` para autofocus en el primer campo del formulario
+- Dashboard de estadísticas en tiempo real (total, creadas, eliminadas, visibles)
+- Animaciones de entrada en páginas, cards y modal (200–300 ms)
+- Búsqueda y filtros en tiempo real
+- Notificaciones toast
+- Diseño responsivo
