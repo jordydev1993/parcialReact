@@ -35,11 +35,13 @@ export function AboutPage() {
 
         <Card className="about-card">
           <Badge variant="muted">Integrantes</Badge>
-          <h3>Proyecto individual con base modular</h3>
-          <p className="about-copy">
-            La estructura permite sumar más integrantes o roles sin rehacer la aplicación. Hoy queda lista para
-            extenderse con nuevas vistas o datos reales.
-          </p>
+          <h3>Equipo de desarrollo</h3>
+          <ul className="about-list">
+            <li>Lozano Melani</li>
+            <li>Galvan Camila</li>
+            <li>Martinez Sofia</li>
+            <li>Huansi Jordy</li>
+          </ul>
         </Card>
       </div>
     </section>
